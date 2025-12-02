@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="unifrakturcook-bold">Dashboard M2 SKILL</h1>
+    </header>
+
+    <main class="dashboard">
+        <section class="item">
+            <h2 class="quintessential-regular">62.5% truc</h2>
+        </section>
+        <section class="item section_form">
+            <h2 class="quintessential-regular">Formulier</h2>
+            <form action="">
+
+                <section class="form_section naam_section">
+                    <label for="naam">Vul je naam in</label>
+                    <input type="text" name="naam" id="naam" placeholder="Voor- en achternaam">
+                </section>
+
+                <section class="form_section vak_section">
+                    <p>Wat is jou favoriete vak?</p>
+                    <div>
+                        <label for="BO">BO</label>
+                        <input type="radio" name="vak" id="BO" value="BO">
+                    </div>
+
+                    <div>
+                        <label for="SLB">SLB</label>
+                        <input type="radio" name="vak" id="SLB" value="SLB">
+                    </div>
+
+                    <div>
+                        <label for="SKIL">SKILL</label>
+                        <input type="radio" name="vak" id="SKIL" value="SKIL">
+                    </div>
+
+                    <div>
+                        <label for="Burgerschap">Burgerschap</label>
+                        <input type="radio" name="vak" id="Burgerschap" value="Burgerschap">
+                    </div>
+
+                </section>
+
+                <section class="form_section email_section">
+                    <label for="email">Wat is je emailadres?</label>
+                    <input type="email" name="email" id="email" placeholder="Vul hier je emailadres in">
+                </section>
+
+                <section class="form_section kleur_section">
+                    <label for="kleur">Wat is jou favoriete kleur?</label>
+                    <input type="color" value="" name="kleur" id="kleur">
+                </section>
+
+                <section class="form_section opmerkingen_section">
+                    <label for="opmerkingen">Heb je nog opmerkingen?</label>
+                    <textarea name="opmerkingen" id="opmerkingen" cols="30" rows="5"
+                        placeholder="Typ hier je opmerkingen..."></textarea>
+                </section>
+
+                <section class="form_section submit_section">
+                    <button type="submit" class="btn-2">Verzenden</button>
+                </section>
+            </form>
+
+
+        </section>
+        <section class="item">
+            <h2 class="quintessential-regular">Grid</h2>
+        </section>
+        <section class="item">
+            <h2 class="quintessential-regular">JSON data laden</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Jesse Boonstra</p>
+    </footer>
+    <script>
+        function sendForm(){
+            const naam = document.getElementById('naam').value;
+            alert(`Hallo, ${naam}! Bedankt voor het invullen van het formulier.`)
+        }
+    </script>
+</body>
+
+</html>
